@@ -198,3 +198,29 @@ pizza={
 print(f"You ordered a {pizza['crust']}-crust pizza" "with the following toppings:")
 for topping in pizza['toppings']:
  print(f"\t{topping}")
+
+#A dictionary in in a Dictionary.
+#You ca use it to store information about different users in a website.
+users={
+    "woman of steel":{
+        "first":"Kura",
+        "last":"chepkemoi",
+        "location":"Bomet"
+    },
+    "Abby":{
+        "first":"Abigael",
+        "last":"chepkirui",
+        "location":"Nairobi"
+    }
+}
+ #python assigns each key to the variable 'username' and the dictionary associated with each username is assigned to the variable 'userinfo'.
+for username,user_info in users.items(): 
+
+#once inside the main dictionary loop,we print the username.
+    print(f"\nUsername:{username}")
+#Then we start accessing the inner dictionary.The variable 'user_info', which contains the dictionary of user infoemation,has three kets:'first','last'  and 'location'.We use each key to generate a neatly formatted full name and location for each person and then print a summary of what we know about each user.
+    full_name=f"{user_info['first']} {user_info['last']}"
+    location="\n{user_info['location']"
+
+    print(f"\tFull name:{full_name.title()}")
+    print(f"\tLocation:{location.title()}")
