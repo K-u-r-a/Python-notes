@@ -26,3 +26,12 @@ else:
     print("\nYou'll be able to ride when you're a little older.")
 
 #The Modulo operator
+You can use it to determine whether a number is even or odd
+number=input("Enter a numbere,  and I will tel you whether it's even or odd:")
+number=int(number)
+
+if number%2==0:
+    print(f"\nThe number {number} is even.")
+else:
+    print(f"\nThe number {number} is odd.")
+
